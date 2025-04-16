@@ -4,8 +4,9 @@
 </div>
 
 <h1 align="center"> X-Gen Lab </h1>
-\[ [简体中文]()| [English]() \]
-[![License](https://img.shields.io/badge/License-MIT-green)](LICENSE) [![CI](https://img.shields.io/badge/CI-Progressing-yellow)](https://x-gen.org/pipeline) [![Discord](https://img.shields.io/badge/Chat-Discord-blue)](https://discord.gg/xgen)
+
+[ [简体中文]()| [English]()]
+[![License](https://img.shields.io/badge/License-MIT-green)](LICENSE) [![CI](https://img.shields.io/badge/CI-Progressing-yellow)](https://x-gen.org/pipeline)
 
 # X-Gen Lab (芯代实验室)
 
@@ -69,30 +70,22 @@
 
 ## 📚 开源项目（持续更新）
 
-- ### 1. [x_gen_hal_base](https://github.com/x-gen-embed/x_gen_hal_base) [![GitHub stars](https://img.shields.io/github/stars/x-gen-embed/x_gen_hal_base?style=social)](https://github.com/x-gen-embed/x_gen_hal_base)
+#### 1. [X-GenStyleGuide](https://github.com/X-Gen-Lab/X-GenStyleGuide) ![GitHub stars](https://img.shields.io/github/stars/X-Gen-Lab/X-GenStyleGuide?style=social) ![GitHub issues](https://img.shields.io/github/issues/X-Gen-Lab/X-GenStyleGuide)
 
-  - **轻量级硬件抽象层**：支持 8/16/32 位 MCU，提供 GPIO、UART、SPI 等外设的统一接口。
-  - **跨平台支持**：已适配 STM32、ESP32、GD32 系列，持续扩展中。
+- **嵌入式 C 规范**：涵盖代码风格、安全编程实践、文档标准。
 
-  ### 2. [x_gen_pm_lib](https://github.com/x-gen-embed/x_gen_pm_lib) [![GitHub issues](https://img.shields.io/github/issues/x-gen-embed/x_gen_pm_lib)](https://github.com/x-gen-embed/x_gen_pm_lib/issues)
 
-  - **智能功耗管理**：动态电压调节（DVFS）、睡眠模式自动切换。
-  - **多芯片支持**：提供 STM32/LPC/ESP32 的参考实现。
-
-  ### 3. [X-Gen Style Guide](https://x-gen.org/guide)
-
-  - **嵌入式 C 规范**：涵盖代码风格、安全编程实践、文档标准。
 
 ## 👥 团队与加入
 
 - 我们是一群来自半导体、物联网、工业控制领域的工程师，坚信 “技术传承与创新同等重要”。如果你擅长：
-  
+
   - 嵌入式底层驱动开发（HAL/RTOS/ 编译器优化）
   - 算法轻量化设计（如 MCU 上的 AI 模型部署）
   - 工具链开发（Python/JavaScript 自动化脚本）
-  
+
   欢迎通过以下方式参与：
-  
+
   1. **提交 Issue**：报告问题或提出新功能建议
   2. **贡献代码**：遵循 贡献指南
   3. **加入 Discord**：与技术团队实时交流
