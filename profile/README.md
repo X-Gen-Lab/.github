@@ -1,145 +1,166 @@
-
 <div align="center">
-  <img src="./images/image.jpeg" width="180" />
+
+<img src="./images/xgen-lab-hero.jpg" alt="X-Gen-Lab hero banner" width="100%" />
+
+# X-Gen-Lab
+
+### Next Generation Embedded & Robotics Laboratory
+
+**Building intelligent machines from silicon to intelligence.**
+
+面向嵌入式、机器人与具身智能的开放工程实验室。
+
+`MCU` -> `RTOS` -> `Linux` -> `ROS2` -> `Robotics` -> `Embodied AI`
+
+<br />
+
+![Embedded](https://img.shields.io/badge/Embedded-Engineering-111111?style=for-the-badge&labelColor=FFD500&color=111111)
+![RTOS](https://img.shields.io/badge/RTOS-Zephyr-111111?style=for-the-badge&labelColor=FF2A2A&color=111111)
+![Linux](https://img.shields.io/badge/Linux-Drivers-111111?style=for-the-badge&labelColor=FFD500&color=111111)
+![ROS2](https://img.shields.io/badge/ROS2-Robotics-111111?style=for-the-badge&labelColor=FF2A2A&color=111111)
+![AI](https://img.shields.io/badge/AI-Embodied-111111?style=for-the-badge&labelColor=FFD500&color=111111)
+
 </div>
 
-<h1 align="center"> X-Gen Lab </h1>
+---
 
-[ [简体中文]()| [English]()]
-[![License](https://img.shields.io/badge/License-MIT-green)](LICENSE) [![CI](https://img.shields.io/badge/CI-Progressing-yellow)](https://x-gen.org/pipeline)
+## Mission
 
-# X-Gen Lab (芯代实验室)
+**X-Gen-Lab** is an open engineering laboratory for the full technology stack behind intelligent machines.
 
-**Define the Next Gen of Embedded**
-**跨代际嵌入式技术枢纽 | 通用架构与基础软件的创新引擎**
+We focus on practical systems: low-level firmware, RTOS platforms, embedded Linux, robot software, and AI capabilities that can eventually run on real machines.
 
-------
+```text
+Hardware -> MCU Firmware -> RTOS -> Embedded Linux -> ROS2 -> Robotics -> Embodied AI
+```
 
-## 🌐 组织简介
+---
 
-**X-Gen** （中文名：芯代）是专注于 **嵌入式系统跨代际技术研发** 的开放性组织，致力于打破硬件架构壁垒，构建 **“一次开发，跨代运行”** 的通用技术生态。我们深耕嵌入式底层架构、核心算法与基础软件，通过自研的跨代适配层、智能工具链与模块化组件，让传统嵌入式设备（如 8 位单片机）与新型边缘计算芯片（如 RISC-V 异构多核）实现技术共生，推动嵌入式开发从 “硬件驱动” 向 “场景驱动” 转型。
+## Technology Roadmap
 
-## 🚀 核心使命
+| Stage | Engineering Focus | Outcome |
+| --- | --- | --- |
+| **01. Embedded Systems** | STM32, ESP32, nRF52/nRF53, bootloader, OTA, protocols | Reliable device foundations |
+| **02. RTOS Platforms** | Zephyr, FreeRTOS, scheduling, IPC, drivers, power management | Production-ready firmware architecture |
+| **03. Embedded Linux** | Device drivers, device tree, kernel modules, networking, performance | System-level control and integration |
+| **04. Robotics Software** | ROS2, Gazebo, RViz, navigation, control, kinematics | Robot software architecture |
+| **05. Embodied Intelligence** | Vision, edge AI, agents, VLMs, robot learning, perception | Intelligence connected to physical systems |
 
-**Gene of Embedded Systems**
-通过模块化技术基因（**X-Gen Code Gene**）重构嵌入式开发范式：
+---
 
-- **消除技术代差**：打通 8/16/32 位 MCU、传统架构与新型芯片的技术断层，实现代码与组件的跨代际复用。
-- **定义通用标准**：制定嵌入式 C 语言开发、驱动适配、功耗管理的 “Gen 级规范”，降低跨平台开发成本。
-- **构建共生生态**：连接芯片厂商、设备制造商与开发者，打造开放协作的嵌入式技术共同体。
+## Engineering Domains
 
-| 英文缩写 | 技术维度                      | 嵌入式实现场景       |
-| :------- | :---------------------------- | :------------------- |
-| **G**    | **General-Purpose**（通用化） | 跨平台硬件抽象层设计 |
-| **E**    | **Efficiency**（高效性）      | 实时系统资源调度算法 |
-| **N**    | **Nucleus**（核心性）         | 微内核架构研发体系   |
+<table>
+  <tr>
+    <td><strong>Firmware</strong></td>
+    <td>MCU architecture, board bring-up, peripheral drivers, protocols, OTA, low-power design</td>
+  </tr>
+  <tr>
+    <td><strong>RTOS</strong></td>
+    <td>Zephyr, FreeRTOS, scheduling, IPC, memory management, device abstraction</td>
+  </tr>
+  <tr>
+    <td><strong>Linux</strong></td>
+    <td>Drivers, device tree, kernel modules, system services, networking, performance tuning</td>
+  </tr>
+  <tr>
+    <td><strong>Robotics</strong></td>
+    <td>Motor control, sensor fusion, localization, navigation, ROS2 integration</td>
+  </tr>
+  <tr>
+    <td><strong>AI Systems</strong></td>
+    <td>Edge AI, vision models, AI agents, robot perception, embodied intelligence experiments</td>
+  </tr>
+</table>
 
-## 🔧 核心技术领域
+---
 
-### 1. **跨代际架构研发**
+## Core Projects
 
-- **统一硬件抽象层（uHAL）**：屏蔽 STM32、ESP32、RISC-V 等芯片差异，提供标准化外设操作 API（如 GPIO、UART、ADC）。
-- **动态兼容性引擎**：支持在新型 MCU 上运行 legacy 8051 代码，同时向传统硬件移植 AI 推理、安全加密等新特性。
+Repositories will be linked here as they become public.
 
-### 2. **新一代通用基础库**
+| Project | Purpose | Status |
+| --- | --- | --- |
+| `xgen-roadmap` | Long-term engineering roadmap and lab planning | Planned |
+| `xgen-docs` | Knowledge base for embedded, RTOS, Linux, ROS2, robotics, and AI | Planned |
+| `xgen-balancebot` | Self-balancing robot platform | Planned |
+| `xgen-zephyr-platform` | Zephyr-based robot MCU platform | Planned |
+| `xgen-linux-lab` | Embedded Linux driver and system learning lab | Planned |
+| `xgen-ros2-lab` | ROS2 robotics experiments and architecture examples | Planned |
+| `xgen-protocol` | Embedded communication protocol framework | Planned |
+| `xgen-ota` | Production-oriented OTA framework | Planned |
 
-- 安全增强型 C 语言组件：
-  - 防溢出动态数组（`x_gen_dynarray`）、类型安全队列（`x_gen_safequeue`），适配资源受限场景。
-- 智能功耗管理框架：
-  - 自动感知负载并切换工作模式（深度睡眠→全速运行），典型场景功耗降低 40%+。
+---
 
-### 3. **自动化工具链创新**
+## Flagship Project
 
-- **图形化代码生成工具（X-Gen Studio）**：通过拖拽外设模块生成可直接编译的 C 语言工程，支持 80%+ 常规驱动代码自动化。
-- **跨代际调试器（X-Gen Debugger）**：一套工具同时调试 8 位单片机寄存器与 32 位芯片 RTOS 任务调度，支持混合断点与性能分析。
+### X-Gen BalanceBot
 
-## ✨ 技术优势
+A production-oriented robotics platform connecting firmware, control, Linux, ROS2, and AI extension work.
 
-| **优势**         | **传统方案痛点**               | **X-Gen 解决方案**                          |
-| ---------------- | ------------------------------ | ------------------------------------------- |
-| **跨代兼容性**   | 旧代码难迁移，新芯片适配成本高 | uHAL 与动态兼容性引擎，代码迁移效率提升 70% |
-| **开发效率**     | 寄存器操作繁琐，依赖硬件手册   | 图形化工具 + 标准化 API，开发周期缩短 50%   |
-| **资源利用率**   | 内存 / 功耗优化依赖人工经验    | 智能组件自动优化，同等功能代码体积减少 30%  |
-| **生态整合能力** | 工具链碎片化，跨厂商协作困难   | 统一开发框架兼容主流芯片，推动行业标准落地  |
+```text
+STM32 / nRF53
+      +
+Zephyr RTOS
+      +
+Motor Control
+      +
+Sensor Fusion
+      +
+ROS2
+      +
+Jetson / Edge AI
+```
 
-## 🌱 生态合作
+| Area | Target |
+| --- | --- |
+| Robot base | Self-balancing mobile platform |
+| Firmware | Zephyr-based control board |
+| Control | Motor control and sensor fusion |
+| Middleware | ROS2 integration |
+| Expansion | Navigation and AI perception ready |
 
-- **芯片厂商**：为新发布的 MCU 提供预研级驱动支持（如乐鑫 ESP32-C6、兆易创新 GD32VF103）。
-- **设备厂商**：定制行业专属解决方案（如工业控制的实时性优化、消费电子的低功耗设计）。
-- **开发者社区**：开源核心组件（如`x_gen_hal_base`、`x_gen_scheduler`），定期举办技术沙龙与代码马拉松。
+---
 
-## 📚 开源项目（持续更新）
+## Current Milestones
 
-#### 1. [X-GenStyleGuide](https://github.com/X-Gen-Lab/X-GenStyleGuide) ![GitHub stars](https://img.shields.io/github/stars/X-Gen-Lab/X-GenStyleGuide?style=social) ![GitHub issues](https://img.shields.io/github/issues/X-Gen-Lab/X-GenStyleGuide)
+| Track | Milestone |
+| --- | --- |
+| Organization | Public profile, roadmap, and repository structure |
+| Firmware | Zephyr platform V1 |
+| Linux | Driver learning series |
+| Robotics | BalanceBot V1 and ROS2 robot framework |
+| AI | Vision robot demo and embodied AI prototype |
 
-- **嵌入式 C 规范**：涵盖代码风格、安全编程实践、文档标准。
+---
 
+## Principles
 
+```text
+Build real systems.
+Document engineering decisions.
+Prefer reusable architecture over one-off demos.
+Connect low-level control with high-level intelligence.
+```
 
-## 👥 团队与加入
+---
 
-- 我们是一群来自半导体、物联网、工业控制领域的工程师，坚信 “技术传承与创新同等重要”。如果你擅长：
+## Brand Assets
 
-  - 嵌入式底层驱动开发（HAL/RTOS/ 编译器优化）
-  - 算法轻量化设计（如 MCU 上的 AI 模型部署）
-  - 工具链开发（Python/JavaScript 自动化脚本）
+| Asset | File |
+| --- | --- |
+| Hero banner | `profile/images/xgen-lab-hero.jpg` |
+| Organization logo | `profile/images/xgen-lab-logo.png` |
+| Editable logo source | `profile/images/xgen-lab-logo.svg` |
 
-  欢迎通过以下方式参与：
+---
 
-  1. **提交 Issue**：报告问题或提出新功能建议
-  2. **贡献代码**：遵循 贡献指南
-  3. **加入 Discord**：与技术团队实时交流
+<div align="center">
 
-## 📮 联系我们
+### Build | Learn | Share | Innovate
 
-- **官网**：（建设中）
-- **技术博客**：（建设中）
-- **开源仓库**：[GitHub Organization](https://github.com/x-gen-embed)
-- **Discord 社区**：（建设中）
+**X-Gen-Lab**
 
-## 🤝 贡献指南
+From Embedded Systems to Embodied Intelligence
 
-### 代码提交规范
-
-1. **分支管理**：
-
-   - `main`: 稳定版本
-   - `dev`: 开发主分支
-   - `feat/xxx`: 新功能开发分支
-   - `fix/xxx`: 问题修复分支
-
-2. **提交信息格式**：
-
-   ```plaintext
-   [类型] 简要描述（50字符内）
-   
-   - 详细说明（可选）
-   - 关联的 Issue 编号（如 #123）
-   ```
-
-   **类型标记**：`feat`, `fix`, `docs`, `refactor`, `test`, `chore`
-
-### 测试要求
-
-- 所有代码提交需通过自动化测试（`make test`）
-- 新增功能需提供单元测试（位于 `tests/` 目录）
-- 硬件相关代码需在至少 2 种 MCU 平台上验证
-
-## 📜 许可证
-
-- **开源版本**：[MIT License](https://license/)
-- **商业授权**：联系 [license@x-gen.org](https://mailto:license@x-gen.org/)
-
-## 🗺️ 路线图
-
-| 季度 | 重点任务 |
-| :--- | :------- |
-|      |          |
-|      |          |
-|      |          |
-
-------
-
-**“芯代架构，跨代共生”** —— 让每一颗芯片都能接入未来技术生态
-
-*X-Gen 芯代嵌入式技术研发组织 | 2025年成立 | 持续进化中*
+</div>
