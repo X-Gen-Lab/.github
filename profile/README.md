@@ -81,13 +81,13 @@ Repositories will be linked here as they become public.
 
 | Project | Purpose | Status |
 | --- | --- | --- |
-| `xgen-roadmap` | Long-term engineering roadmap and lab planning | Planned |
-| `xgen-docs` | Knowledge base for embedded, RTOS, Linux, ROS2, robotics, and AI | Planned |
+| [`xgen-roadmap`](https://github.com/X-Gen-Lab/xgen-roadmap) | Long-term engineering roadmap and lab planning | Active |
+| [`xgen-docs`](https://github.com/X-Gen-Lab/xgen-docs) | Knowledge base for embedded, RTOS, Linux, ROS2, robotics, and AI | Active |
 | `xgen-balancebot` | Self-balancing robot platform | Planned |
 | `xgen-zephyr-platform` | Zephyr-based robot MCU platform | Planned |
 | `xgen-linux-lab` | Embedded Linux driver and system learning lab | Planned |
 | `xgen-ros2-lab` | ROS2 robotics experiments and architecture examples | Planned |
-| `xgen-protocol` | Embedded communication protocol framework | Planned |
+| `xgen-link` | Embedded device link and communication framework | Planned |
 | `xgen-ota` | Production-oriented OTA framework | Planned |
 
 ---
