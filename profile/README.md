@@ -83,7 +83,7 @@ Repositories will be linked here as they become public.
 | --- | --- | --- |
 | [`xgen-roadmap`](https://github.com/X-Gen-Lab/xgen-roadmap) | Long-term engineering roadmap and lab planning | Active |
 | [`xgen-docs`](https://github.com/X-Gen-Lab/xgen-docs) | Knowledge base for embedded, RTOS, Linux, ROS2, robotics, and AI | Active |
-| `xgen-balancebot` | Self-balancing robot platform | Planned |
+| `xgen-balancebot` | BalanceBot-X modular robot MCU platform | Planned |
 | `xgen-zephyr-platform` | Zephyr-based robot MCU platform | Planned |
 | `xgen-linux-lab` | Embedded Linux driver and system learning lab | Planned |
 | `xgen-ros2-lab` | ROS2 robotics experiments and architecture examples | Planned |
@@ -94,18 +94,20 @@ Repositories will be linked here as they become public.
 
 ## Flagship Project
 
-### X-Gen BalanceBot
+### BalanceBot-X
 
-A production-oriented robotics platform connecting firmware, control, Linux, ROS2, and AI extension work.
+A modular robot MCU control platform that starts from balance control and expands into power, sensing, communication, safety, diagnostics, and factory test workflows.
 
 ```text
-STM32 / nRF53
+STM32 / nRF / ESP32 family
       +
 Zephyr RTOS
       +
 Motor Control
       +
 Sensor Fusion
+      +
+Power / Safety / Test
       +
 ROS2
       +
@@ -114,11 +116,11 @@ Jetson / Edge AI
 
 | Area | Target |
 | --- | --- |
-| Robot base | Self-balancing mobile platform |
-| Firmware | Zephyr-based control board |
-| Control | Motor control and sensor fusion |
-| Middleware | ROS2 integration |
-| Expansion | Navigation and AI perception ready |
+| Robot base | Self-balancing platform with extensible robot control board |
+| Firmware | Zephyr-based control platform |
+| Control | Motor control, encoder feedback, IMU fusion, and safety |
+| Platform | Power, communication, storage, diagnostics, and factory test |
+| Expansion | ROS2, Linux host, and AI-ready integration boundaries |
 
 ---
 
@@ -129,7 +131,7 @@ Jetson / Edge AI
 | Organization | Public profile, roadmap, and repository structure |
 | Firmware | Zephyr platform V1 |
 | Linux | Driver learning series |
-| Robotics | BalanceBot V1 and ROS2 robot framework |
+| Robotics | BalanceBot-X V1 and ROS2 robot framework |
 | AI | Vision robot demo and embodied AI prototype |
 
 ---
